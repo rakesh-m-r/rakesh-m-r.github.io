@@ -166,10 +166,22 @@ body {
   .container{
     grid-template-columns: 1fr 1fr;
   }
+  .infobox{
+    height: 95vh;
+  }
+  .details{
+    height: 95vh !important;
+  }
 }
 @media screen and (max-width: 1000px){
   .container{
     grid-template-columns: 0.6fr 1fr;
+  }
+  .infobox{
+    height: 95vh;
+  }
+  .details{
+    height: 95vh !important;
   }
 }
 .menu{
