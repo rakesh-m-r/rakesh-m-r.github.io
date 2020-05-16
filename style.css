@@ -24,7 +24,7 @@ body {
   vertical-align: middle;
 }
 .details {
-  max-height: 95vh;
+  max-height: auto;
   overflow-y: scroll;
 }
 .mail {
@@ -154,13 +154,13 @@ body {
   }
   .infobox{
     grid-row: 1;
-    height: auto;
+    height: fit-content;
     width: 90vw;
   }
   .details{
     grid-row: 2;
-    height: 100%;
-    margin-top: 15px;  }
+    height: fit-content !important;
+    margin-top: 10px;  }
 }
 @media screen and (max-width: 800px){
   .container{
