@@ -17,7 +17,42 @@
 
 <body>
   <button onclick="menubar()" class="menubar material-icons">menu</button>
-  <div class="menu"></div>
+  <div class="menu"><br>
+    <ul class="mdc-list">
+      <li onclick="location.href='#about',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+        <span class="abt mdc-list-item__graphic material-icons">
+          person
+        </span><span class="mdc-list-item__text">
+          About
+        </span>
+
+      </li>
+      <li onclick="location.href='#skills',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+        <span class="mdc-list-item__graphic material-icons">
+          <i class="fas fa-laptop-code"></i>
+        </span><span class="mdc-list-item__text">
+          Skills
+        </span>
+
+      </li>
+      <li onclick="location.href='#projects',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+        <span class="mdc-list-item__graphic material-icons">
+          <i class="fas fa-tools"></i> </span><span class="mdc-list-item__text">
+          Projects
+        </span>
+
+      </li>
+      <li
+        onclick="location.href='https://drive.google.com/file/d/1GnejHa_egGofg6yOr6GGxzDoIFz7GSby/view?usp=sharing',menubar()"
+        class="mdc-list-item mdc-ripple-upgraded">
+        <span class="mdc-list-item__graphic material-icons">
+          <i class="fas fa-file"></i> </span><span class="mdc-list-item__text">
+          Resume
+        </span>
+
+      </li>
+    </ul>
+  </div>
   <div class="container">
     <div class="infobox mdc-elevation--z5">
       <center><img class="profile" src="profile.png"><br><br>
@@ -60,7 +95,7 @@
       </div>
     </div>
     <div class="details mdc-elevation--z5">
-      <div class="box">
+      <div id="about" class="box">
         <div class="icon1">
           <center> <i class="material-icons color">person</i></center>
         </div>
@@ -82,7 +117,7 @@
           <div class="cont"><br>Actively looking for Internship/Full Time job in Web Development</div>
         </div>
       </div>
-      <div class="box">
+      <div id="skills" class="box">
         <div class="icon1">
           <center> <i class="fas fa-laptop-code"></i></center>
         </div>
@@ -147,12 +182,10 @@
           <div class="divider1"></div>
           <div class="cont"><br>
             <span class="bold"> B.E, Computer Science and Engineering (CSE), </span>Sai Vidya Institute of Technology,
-            Bangalore
-
-            <br>Jun, 2017 - Present </div>
+            Bangalore<br>Jun, 2017 - Present </div>
         </div>
       </div>
-      <div class="box">
+      <div id="projects" class="box">
         <div class="icon1">
           <center> <i class="fas fa-tools"></i></center>
         </div>
@@ -161,9 +194,10 @@
           <div class="divider1"></div>
           <div class="cont projects"><br>
             <span class="bold"><a href="http://dbproject.cf" target="_blank">Online Examination System</a><br><br>
-              <span class="bold"><a href="http://techvidya.tk" target="_blank">Techvidya-2k19 website</a><br><br>
-                <span class="bold"><a href="http://techsearchit.netlify.app" target="_blank">Search-It Event
-                    website</a><br><br></div>
+            <span class="bold"><a href="http://techvidya.tk" target="_blank">Techvidya-2k19 website</a><br><br>
+            <span class="bold"><a href="http://techsearchit.netlify.app" target="_blank">Search-It Event website</a><br><br>
+            <span class="bold"><a href="https://github.com/rakesh-m-r?tab=repositories" target="_blank">>>More</a><br><br>
+          </div>
         </div>
       </div>
     </div>
@@ -171,4 +205,5 @@
 </body>
 <script src="app.js">
 </script>
+
 </html>
