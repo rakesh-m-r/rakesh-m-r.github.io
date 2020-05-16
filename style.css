@@ -33,8 +33,7 @@ body {
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  padding: 3%;
-  padding-top: 8%;
+  padding-top: 3%;
 }
 .name {
   font-weight: 600;
@@ -59,7 +58,7 @@ body {
 }
 .social {
   display: inline-flexbox;
-  padding: 8% 15% 8% 15%;
+  padding: 2% 15% 2% 15%;
 }
 .info {
   width: 80%;
