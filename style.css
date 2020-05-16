@@ -6,6 +6,7 @@ body {
   font-family: "Poppins";
 }
 .container {
+  top: 0 !important;
   grid-row: 2;
   display: grid;
   grid-template-columns: 1.2fr 3fr;
@@ -16,7 +17,6 @@ body {
 .infobox {
   grid-column: 1;
   height: auto;
-  min-height: 95vh;
   vertical-align: middle;
 }
 .details {
@@ -34,6 +34,7 @@ body {
   height: 50%;
   border-radius: 50%;
   padding: 3%;
+  padding-top: 8%;
 }
 .name {
   font-weight: 600;
@@ -58,7 +59,7 @@ body {
 }
 .social {
   display: inline-flexbox;
-  padding: 8% 15% 0 15%;
+  padding: 8% 15% 8% 15%;
 }
 .info {
   width: 80%;
@@ -125,10 +126,35 @@ body {
     font-family: 'Poppins' !important;
     font-weight: 400;
 }
+
 .about{
     font-weight: 400;
     margin-bottom: 30px !important;
 }
 .site{
     text-transform: lowercase;
+}
+.menubar{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  background-color: transparent;
+  border: transparent;
+}
+@media screen and (max-width: 420px)
+{
+  .container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  .infobox{
+    grid-row: 1;
+    height: auto;
+    width: 90vw;
+  }
+  .details{
+    grid-row: 2;
+    height: 100%;
+    margin-top: 15px;  }
 }
