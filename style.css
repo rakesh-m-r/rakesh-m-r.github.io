@@ -58,7 +58,7 @@ body {
 }
 .social {
   display: inline-flexbox;
-  padding: 2% 15% 2% 15%;
+  padding: 3% 15% 3% 15%;
 }
 .info {
   width: 80%;
@@ -187,10 +187,11 @@ body {
   z-index: 9;
   position: fixed;
   top: 0px;
-  background-color: #fefefe;
+  left: 0px;
+  background-color: rgba(22, 22, 22, 0.9);
   outline: none;
   border: none;
-  transition: 6s;
+  transition: all 1s ease-out;
 }
 .mdc-list-item__text>a{
   text-decoration: none;
@@ -200,6 +201,13 @@ body {
   color: #6200ee !important;
   font-size: 24px;
 }
-.mdc-list-item__graphic{
+.mdc-list-item__graphic,.mdc-list-item__text{
   font-size: 20px !important;
+  color: #fefefe ;
+}
+.mdc-list-itemli:hover{
+  color: #6200ee !important;
+}
+ul{
+  margin-left: 10% !important;
 }
