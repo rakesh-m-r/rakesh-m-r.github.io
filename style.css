@@ -30,8 +30,8 @@ body {
   text-transform: capitalize;
 }
 .profile {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
   padding-top: 3%;
 }
