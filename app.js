@@ -8,7 +8,6 @@ function menubar() {
   } else if (document.querySelector('.menubar').textContent == 'close') {
     document.querySelector('.menubar').textContent = 'menu'
     document.querySelector('.menubar').style = "color: black"
-
-    document.querySelector('.menu').style = "display: none;"
+    document.querySelector('.menu').style = "display: none;";
   }
 }
