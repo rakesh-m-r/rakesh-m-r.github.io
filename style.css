@@ -216,7 +216,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 620px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -266,7 +265,7 @@ body {
   background-color: rgba(22, 22, 22, 0.9);
   outline: none;
   border: none;
-    transition: display 1s ease-in-out 1s;
+  animation: FadeOutLeft 1s;
 }
 
 .mdc-list-item__text>a {

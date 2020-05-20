@@ -22,16 +22,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="robots" content="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
   <button onclick="menubar()" class="menubar material-icons">menu</button>
   <div class="menu"><br>
     <ul class="mdc-list">
-      <li onclick="location.href='#about',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+      <li onclick="location.href='#about',menubar()" id="ani0" class="mdc-list-item mdc-ripple-upgraded">
         <span class="abt mdc-list-item__graphic material-icons">person
         </span><span class="mdc-list-item__text">About</span> </li>
-      <li onclick="location.href='#skills',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+      <li onclick="location.href='#skills',menubar()" id="ani1" class="mdc-list-item mdc-ripple-upgraded">
         <span class="mdc-list-item__graphic material-icons">
           <i class="fas fa-laptop-code"></i>
         </span><span class="mdc-list-item__text">
@@ -39,14 +40,14 @@
         </span>
 
       </li>
-      <li onclick="location.href='#projects',menubar()" class="mdc-list-item mdc-ripple-upgraded">
+      <li onclick="location.href='#projects',menubar()" id="ani2" class="mdc-list-item mdc-ripple-upgraded">
         <span class="mdc-list-item__graphic material-icons">
           <i class="fas fa-tools"></i> </span><span class="mdc-list-item__text">
           Projects
         </span>
 
       </li>
-      <li
+      <li id="ani3"
         onclick="location.href='https://drive.google.com/file/d/1GnejHa_egGofg6yOr6GGxzDoIFz7GSby/view?usp=sharing',menubar()"
         class="mdc-list-item mdc-ripple-upgraded">
         <span class="mdc-list-item__graphic material-icons">
