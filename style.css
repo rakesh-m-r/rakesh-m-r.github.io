@@ -286,3 +286,9 @@ body {
 .mdc-list-item:hover {
   color: #6200ee !important;
 }
+@media screen and (min-width: 500px) {
+  .wow{
+      animation-name: none !important;
+      visibility: visible !important;
+  }
+}
