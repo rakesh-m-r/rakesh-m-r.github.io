@@ -1,0 +1,22 @@
+{
+    "short_name": "Rakesh M R",
+    "name": "Rakesh M R",
+    "description": "Portfolio of Rakesh M R",
+    "icons": [
+      {
+        "src": "profile.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "profile.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "https://rakeshmr.netlify.app",
+    "background_color": "skyblue",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "transparent"
+  }
