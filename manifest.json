@@ -14,7 +14,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "https://rakeshmr.netlify.app",
+    "start_url": "/index.html",
     "background_color": "skyblue",
     "display": "standalone",
     "scope": "/",
