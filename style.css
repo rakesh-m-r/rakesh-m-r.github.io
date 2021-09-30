@@ -11,7 +11,7 @@ body {
   font-family: "Poppins";
 }
 
-.container {
+.container-1{
   top: 0 !important;
   grid-row: 2;
   display: grid;
@@ -91,7 +91,7 @@ body {
   grid-column: 1;
 }
 
-.content {
+.content-1 {
   grid-column: 2;
 }
 
@@ -168,13 +168,13 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
-  z-index: 99;
   background-color: transparent;
   border: transparent;
+  z-index: 2;
 }
 
 @media screen and (max-width: 620px) {
-  .container {
+  .container-1 {
     display: grid;
     grid-template-rows: auto auto;
   }
@@ -217,7 +217,7 @@ body {
 }
 
 @media screen and (min-width: 620px) {
-  .container {
+  .container-1 {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -237,7 +237,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .container {
+  .container-1 {
     grid-template-columns: 0.5fr 1fr !important;
   }
 
@@ -291,4 +291,60 @@ body {
       animation-name: none !important;
       visibility: visible !important;
   }
+}
+
+.wrapper {
+  position: relative;
+  width: 50px;
+}
+
+.content {
+  position: absolute;
+  left: 0%;
+  bottom: 100%;
+  border-radius: 5px;
+  width: 15rem;
+
+  display: none;
+  flex-direction: column;
+
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(22, 22, 22, 0.9);
+  z-index: 1;
+}
+.content> ul>li{
+  margin: 1rem;
+}
+.content>ul>li>span{
+  margin: .5rem;
+}
+
+.profile-pic:hover + .content {
+  display: flex;
+  margin: 0rem .5rem;
+
+}
+
+.content.down {
+  top: 100%;
+  bottom: auto;
+}
+
+/* Small details ----------- */
+.wrapper img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.content:hover {
+  display: flex;
+  margin: 0rem .5rem;
+}
+
+.content > div {
+  padding: 5px;
 }

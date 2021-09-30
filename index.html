@@ -3,64 +3,71 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content-1="width=device-width, initial-scale=1.0" />
   <title>Rakesh M R | Portfolio</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="title" content="Rakesh M R | Portfolio">
+  <meta name="title" content-1="Rakesh M R | Portfolio">
   <link rel="shortcut icon" href="profile.png">
   <link rel="apple-touch-icon" href="profile.png">
   <link rel="canonical" href="https://rakesh-m-r.github.io" />
-  <meta name="author" content="Rakesh M R">
-  <meta name="description" content="Looking for a challenging role in a reputable organization to utilize my technical and
+  <meta name="author" content-1="Rakesh M R">
+  <meta name="description" content-1="Looking for a challenging role in a reputable organization to utilize my technical and
   management skills for the growth of the organization as well as to enhance my knowledge
   about new and emerging trends in the IT sector.">
-  <meta name="author" content="Rakesh M R">
+  <meta name="author" content-1="Rakesh M R">
   <meta name="keywords"
-    content="Rakesh, rakesh,rakesh m r, rakesh github profile, rakesh mariyaplar, rakesh-m-r, Rakesh M R, rakesh-mariyaplar, Rakesh Mariyaplar,Mariyaplar,rakesh,rakesh mariyaplar">
+    content-1="Rakesh, rakesh,rakesh m r, rakesh github profile, rakesh mariyaplar, rakesh-m-r, Rakesh M R, rakesh-mariyaplar, Rakesh Mariyaplar,Mariyaplar,rakesh,rakesh mariyaplar">
   <link rel="stylesheet" href="style.css" />
-  <meta name="google-site-verification" content="U-MBZQOJOSd_ptXqbECEyffs9jQ_qQM4AZpp20htKhs" />
-  <meta name="google-site-verification" content="dw-WKwT-bsIBzHUjQ3_Om-gdxCfpNdMJEZfKs8iriKE" />
+  <meta name="google-site-verification" content-1="U-MBZQOJOSd_ptXqbECEyffs9jQ_qQM4AZpp20htKhs" />
+  <meta name="google-site-verification" content-1="dw-WKwT-bsIBzHUjQ3_Om-gdxCfpNdMJEZfKs8iriKE" />
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content-1="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
-  <button onclick="menubar()" class="menubar material-icons">menu</button>
-  <div class="menu"><br>
-    <ul class="mdc-list">
-      <li onclick="location.href='#about',menubar()" id="ani0" class="mdc-list-item mdc-ripple-upgraded">
-        <span class="abt mdc-list-item__graphic material-icons">person
-        </span><span class="mdc-list-item__text">About</span> </li>
-      <li onclick="location.href='#skills',menubar()" id="ani1" class="mdc-list-item mdc-ripple-upgraded">
-        <span class="mdc-list-item__graphic material-icons">
-          <i class="fas fa-laptop-code"></i>
-        </span><span class="mdc-list-item__text">
-          Skills
-        </span>
+  <div class="wrapper">
+    <div class="profile-pic" onmouseover="adjust();">
+      <button class=" menubar material-icons">menu</button>
+    </div>
 
-      </li>
-      <li onclick="location.href='#projects',menubar()" id="ani2" class="mdc-list-item mdc-ripple-upgraded">
-        <span class="mdc-list-item__graphic material-icons">
-          <i class="fas fa-tools"></i> </span><span class="mdc-list-item__text">
-          Projects
-        </span>
+    <div class="content">
+      <ul class="mdc-list">
+        <li onclick="location.href='#about',menubar()" id="ani0" class="mdc-list-item mdc-ripple-upgraded">
+          <span class="abt mdc-list-item__graphic material-icons">person
+          </span><span class="mdc-list-item__text">About</span>
+        </li>
+        <li onclick="location.href='#skills',menubar()" id="ani1" class="mdc-list-item mdc-ripple-upgraded">
+          <span class="mdc-list-item__graphic material-icons">
+            <i class="fas fa-laptop-code"></i>
+          </span><span class="mdc-list-item__text">
+            Skills
+          </span>
+  
+        </li>
+        <li onclick="location.href='#projects',menubar()" id="ani2" class="mdc-list-item mdc-ripple-upgraded">
+          <span class="mdc-list-item__graphic material-icons">
+            <i class="fas fa-tools"></i> </span><span class="mdc-list-item__text">
+            Projects
+          </span>
+  
+        </li>
+        <li id="ani3"
+          onclick="location.href='https://docs.google.com/document/d/e/2PACX-1vTcoXqzSFC_PcABHxUu7d9O7MfRSaVe5odrC33Rm5qYhSNMrfke8R4fD139y3xTDK0I9ZJfioT5UmJA/pub',menubar()"
+          class="mdc-list-item mdc-ripple-upgraded">
+          <span class="mdc-list-item__graphic material-icons">
+            <i class="fas fa-file"></i> </span><span class="mdc-list-item__text">
+            Resume
+          </span>
+  
+        </li>
+      </ul>
+    </div>
+    </div>
 
-      </li>
-      <li id="ani3"
-        onclick="location.href='https://docs.google.com/document/d/e/2PACX-1vTcoXqzSFC_PcABHxUu7d9O7MfRSaVe5odrC33Rm5qYhSNMrfke8R4fD139y3xTDK0I9ZJfioT5UmJA/pub',menubar()"
-        class="mdc-list-item mdc-ripple-upgraded">
-        <span class="mdc-list-item__graphic material-icons">
-          <i class="fas fa-file"></i> </span><span class="mdc-list-item__text">
-          Resume
-        </span>
-
-      </li>
-    </ul>
-  </div>
-  <div class="container">
+  <div class="container-1">
     <div class="infobox mdc-elevation--z5">
       <center><img alt="profile.png" class="profile" src="profile.png"><br><br>
         <span class="name"> Rakesh M R</span><br>
@@ -102,33 +109,36 @@
       </div>
     </div>
     <div class="details mdc-elevation--z5 wow animate__animated animate__slideInUp animate__fast">
-      <!-- <div id="about" class="box wow animate__animated animate__slideInUp">
+      <div id="about" class="box wow animate__animated animate__slideInUp">
         <div class="icon1">
           <center> <i class="material-icons color">person</i></center>
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">ABOUT</div>
           <div class="divider1"></div>
           <div class="cont"><br>Looking for a challenging role in a reputable organization to utilize my technical and
             management skills for the growth of the organization as well as to enhance my knowledge
             about new and emerging trends in the IT sector.</div>
         </div>
-      </div> -->
+      </div>
 
       <div class="box wow animate__animated animate__slideInUp">
         <div class="icon1">
           <center> <i class="material-icons color">apartment</i><br><br><br>
+            <div class="present"></div>
           </center>
 
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">
+            
+
             Work Experience</div>
           <div class="divider1"></div>
           <div class="cont"><br>
-            <span class="bold"> SDE - 1 At HashedIn by Deloitte</span>, Bangalore<br>April, 2021 - Present<br><br>
-            <span class="bold"> Intern At SimpleSec</span>, Bangalore<br>September, 2020 - November 2020<br><br>
-            <span class="bold"> Intern At K-AKA technology services</span>, Bangalore<br>July, 2020 - August, 2020
+            <span class="bold"> SDE - 1 <-- SDE Intern at HashedIn by Deloitte</span>, Bangalore<br>April, 2021 - Present<br><br>
+            <span class="bold"> Intern at SimpleSec</span>, Bangalore<br>September, 2020 - November 2020<br><br>
+            <span class="bold"> Intern at K-AKA technology services</span>, Bangalore<br>July, 2020 - August, 2020
         </div>
       </div>
       </div>
@@ -138,7 +148,7 @@
         <div class="icon1">
           <center> <i class="fas fa-laptop-code"></i></center>
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">Skills</div>
           <div class="divider1"></div>
           <div class="cont"><br>
@@ -176,9 +186,6 @@
               <div class="mdc-chip" role="row">
                 <span class="mdc-chip__text">SQL</span>
               </div>
-              <div class="mdc-chip" role="row">
-                <span class="mdc-chip__text">C/C++</span>
-              </div>
             </div>
           </div>
         </div>
@@ -187,7 +194,7 @@
         <div class="icon1">
           <center> <i class="fas fa-certificate"></i></center>
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">CERTIFICATIONS/TRAININGS</div>
           <div class="divider1"></div>
           <div class="cont"><br>
@@ -206,11 +213,10 @@
       <div class="box wow animate__animated animate__slideInUp">
         <div class="icon1">
           <center> <i class="fas fa-university"></i><br><br><br>
-            <div class="present"></div>
           </center>
 
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">Education</div>
           <div class="divider1"></div>
           <div class="cont"><br>
@@ -222,16 +228,12 @@
         <div class="icon1">
           <center> <i class="fas fa-tools"></i></center>
         </div>
-        <div class="content">
+        <div class="content-1">
           <div class="head">Projects</div>
           <div class="divider1"></div>
           <div class="cont projects"><br>
-            <span class="bold"><a href="http://mydbproject.epizy.com/" target="_blank">Online Examination System</a><br><br>
-              <span class="bold"><a href="https://techvidya.netlify.app/" target="_blank">Techvidya-2k19 website</a><br><br>
-                <span class="bold"><a href="http://techsearchit.netlify.app" target="_blank">Search-It Event
-                    website</a><br><br>
                   <span class="bold"><a href="https://github.com/rakesh-m-r?tab=repositories"
-                      target="_blank">>>More</a><br><br>
+                      target="_blank">>> Check Out on My Github</a><br><br>
           </div>
         </div>
       </div>
@@ -245,4 +247,5 @@
 <script src="app.js"></script>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script src="https://kit.fontawesome.com/91af480bfc.js" crossorigin="anonymous"></script>
+
 </html>
