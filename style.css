@@ -10,7 +10,7 @@ body {
   opacity: 1;
   background-repeat:repeat-y;
   background-size: 100vw 100vh;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
+  background-image: url(https://cdn2.f-cdn.com/contestentries/1485923/33412847/5ca64d24cbbfb_thumb900.jpg);
 }
 .mdc-button {
   font-family: "Poppins";
