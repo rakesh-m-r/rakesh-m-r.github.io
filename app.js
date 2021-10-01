@@ -1,6 +1,6 @@
 
 function menubar() {
-    document.querySelector('.content').style = "display: none;"
+    // document.querySelector('.content').style = "display: initial;"
 }
 
 function adjust() {
@@ -8,7 +8,6 @@ function adjust() {
   const top = wrapper.getBoundingClientRect().top;
   const content = document.querySelector(".content");
 
-  document.querySelector('.content').style = "display: flex;"
 
   if (top < content.getBoundingClientRect().height) {
     content.classList.add("down");
