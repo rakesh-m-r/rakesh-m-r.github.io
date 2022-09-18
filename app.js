@@ -4,7 +4,7 @@ let github = document.querySelector('.github');
 let githubAnimation = bodymovin.loadAnimation({
   container: github,
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: false,
   path: "./github.json"
 });
@@ -14,7 +14,7 @@ github.addEventListener('mouseenter', function() {
 });
 
 github.addEventListener('mouseleave', function() {
-  githubAnimation.pause();
+  githubAnimation.goToAndStop(0,true);
 });
 
 let instagram = document.querySelector('.instagram');
@@ -22,7 +22,7 @@ let instagram = document.querySelector('.instagram');
 let instagramAnimation = bodymovin.loadAnimation({
   container: instagram,
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: false,
   path: "./instagram.json"
 });
@@ -32,7 +32,7 @@ instagram.addEventListener('mouseenter', function() {
 });
 
 instagram.addEventListener('mouseleave', function() {
-  instagramAnimation.pause();
+  instagramAnimation.goToAndStop(0,true);
 });
 
 let linkedin = document.querySelector('.linkedin');
@@ -40,7 +40,7 @@ let linkedin = document.querySelector('.linkedin');
 let linkedinAnimation = bodymovin.loadAnimation({
   container: linkedin,
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: false,
   path: "./linkedin.json"
 });
@@ -50,7 +50,7 @@ linkedin.addEventListener('mouseenter', function() {
 });
 
 linkedin.addEventListener('mouseleave', function() {
-  linkedinAnimation.pause();
+  linkedinAnimation.goToAndStop(0,true);
 });
 
 let twitter = document.querySelector('.twitter');
@@ -58,7 +58,7 @@ let twitter = document.querySelector('.twitter');
 let twitterAnimation = bodymovin.loadAnimation({
   container: twitter,
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: false,
   path: "./twitter.json"
 });
@@ -68,5 +68,5 @@ twitter.addEventListener('mouseenter', function() {
 });
 
 twitter.addEventListener('mouseleave', function() {
-  twitterAnimation.pause();
+  twitterAnimation.goToAndStop(0,true);
 });
