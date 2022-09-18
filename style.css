@@ -54,7 +54,7 @@ body{
 
 .link{
   display: flex;
-  min-width: 30vw;
+  min-width: 25vw;
   justify-content: space-between;
   border: 1px solid #e5e7eb;
   padding: .5rem 2rem;
