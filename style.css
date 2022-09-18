@@ -16,6 +16,9 @@
   padding: .5rem 1rem;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  -moz-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
 }
 
 body {
@@ -54,6 +57,9 @@ body {
   width: 7.5rem;
   border-radius: 50%;
   animation: zoom 2s;
+  -webkit-box-shadow: 0px 0px 72px 11px rgba(66, 50, 148, 0.48);
+  -moz-box-shadow: 0px 0px 72px 11px rgba(66, 50, 148, 0.48);
+  box-shadow: 0px 0px 72px 11px rgba(66, 50, 148, 0.48);
 }
 
 .github {
@@ -69,8 +75,10 @@ body {
   padding: .5rem 2rem;
   border-radius: 50px;
   align-items: center;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
-  ;
+  -webkit-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  -moz-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  border: 1px solid #423294;
 }
 
 .link a svg g path {
