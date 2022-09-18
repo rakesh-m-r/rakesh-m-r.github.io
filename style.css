@@ -2,7 +2,7 @@
 .header{
   display: flex;
   justify-content: flex-end;
-  width: 80vw;
+  width: 70vw;
   margin: auto;
   padding: 1rem 0rem;
   max-height: 10vh;
