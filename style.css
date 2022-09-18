@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-.header{
+
+.header {
   display: flex;
   justify-content: flex-end;
   width: 70vw;
@@ -8,28 +9,32 @@
   max-height: 10vh;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.resume{
+
+.resume {
   background: #423294;
   color: #fdfffd;
   padding: .5rem 1rem;
   border-radius: 50px;
   text-decoration: none;
 }
-body{
+
+body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   background: #fdfffd;
   color: #423294;
 }
-.main-card{
+
+.main-card {
   display: grid;
   grid-template-columns: auto;
   justify-items: center;
   min-height: 90vh;
   align-items: center;
 }
-.card{
+
+.card {
   max-width: 50%;
   column-gap: 2rem;
   display: grid;
@@ -37,22 +42,26 @@ body{
   align-items: flex-start;
   justify-content: center;
 }
-.heading{
+
+.heading {
   font-size: xx-large;
   font-weight: 700;
   margin: 0;
 }
-.profile{
+
+.profile {
   height: 7.5rem;
   width: 7.5rem;
   border-radius: 50%;
+  animation: zoom 2s;
 }
-.github{
+
+.github {
   width: 2rem;
   height: 2rem;
 }
 
-.link{
+.link {
   display: flex;
   min-width: 25vw;
   justify-content: space-between;
@@ -60,25 +69,39 @@ body{
   padding: .5rem 2rem;
   border-radius: 50px;
   align-items: center;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+  ;
 }
 
-.link a svg g path{
+.link a svg g path {
   stroke: #423294 !important;
 }
 
 @media screen and (max-width:400px) {
-  .header{
+  .header {
     width: 95vw;
   }
-  .card{
+
+  .card {
     grid-template-columns: 1fr;
     max-width: 80%;
   }
-  .link{
+
+  .link {
     min-width: 70%;
   }
-  .heading{
+
+  .heading {
     padding-top: 1rem;
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    background-color: scale(2);
   }
 }
