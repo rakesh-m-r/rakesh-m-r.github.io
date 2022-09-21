@@ -6,7 +6,7 @@ let githubAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: "./github.json"
+  path: "./lottieFiles/github.json"
 });
 
 github.addEventListener('mouseenter', function() {
@@ -24,7 +24,7 @@ let instagramAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: "./instagram.json"
+  path: "./lottieFiles/instagram.json"
 });
 
 instagram.addEventListener('mouseenter', function() {
@@ -42,7 +42,7 @@ let linkedinAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: "./linkedin.json"
+  path: "./lottieFiles/linkedin.json"
 });
 
 linkedin.addEventListener('mouseenter', function() {
@@ -60,7 +60,7 @@ let twitterAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: "./twitter.json"
+  path: "./lottieFiles/twitter.json"
 });
 
 twitter.addEventListener('mouseenter', function() {

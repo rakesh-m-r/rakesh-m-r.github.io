@@ -35,6 +35,8 @@ body {
   justify-items: center;
   min-height: 90vh;
   align-items: center;
+  max-width: 80vw;
+  margin: auto;
 }
 
 .card {
