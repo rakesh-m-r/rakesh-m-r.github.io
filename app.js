@@ -17,24 +17,6 @@ github.addEventListener('mouseleave', function() {
   githubAnimation.goToAndStop(0,true);
 });
 
-let instagram = document.querySelector('.instagram');
-
-let instagramAnimation = bodymovin.loadAnimation({
-  container: instagram,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  path: "./lottieFiles/instagram.json"
-});
-
-instagram.addEventListener('mouseenter', function() {
-  instagramAnimation.play();
-});
-
-instagram.addEventListener('mouseleave', function() {
-  instagramAnimation.goToAndStop(0,true);
-});
-
 let linkedin = document.querySelector('.linkedin');
 
 let linkedinAnimation = bodymovin.loadAnimation({

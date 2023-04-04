@@ -71,19 +71,20 @@ body {
 
 .link {
   display: flex;
-  min-width: 25vw;
+  min-width: 20vw;
   justify-content: space-between;
-  border: 1px solid #e5e7eb;
+  /* border: 1px solid #e5e7eb; */
   padding: .5rem 2rem;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   align-items: center;
-  -webkit-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
+  /* -webkit-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
   -moz-box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
   box-shadow: 0px 5px 40px 0px rgb(66 50 148 / 48%);
-  border: 1px solid #423294;
+  border: 1px solid #423294; */
+  color: #423294 !important;
 }
 
-.link a svg g path {
+.link a svg path {
   stroke: #423294 !important;
 }
 
