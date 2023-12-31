@@ -1,0 +1,81 @@
+
+.backgroud {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--white-a10);
+
+    .card {
+        max-width: 30vw;
+        padding: 1rem;
+        position: relative;
+        margin: 15vh 0;
+        border-top: .25rem solid var(--blue-2); /* Adjust the color of the corner border */
+
+        .icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -2.25rem;
+            color: var(--blue-2);
+        }
+
+        .heading {
+            font-weight: bold;
+            color: var(--primary-font);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .heading1 {
+            font-weight: bold;
+            color: var(--secondary-font);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .description {
+            color: var(--secondary-font);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+/*    .card:nth-child(1) {*/
+/*        border: none;*/
+/*    }*/
+
+    .card:last-child {
+        border: none;
+    }
+
+/*    .card:nth-child(1)::before {*/
+/*        content: '';*/
+/*        position: absolute;*/
+/*        width: 50%; !* Adjust the width of the corner border *!*/
+/*        top: 0;*/
+/*        right: 0;*/
+/*        border-top: .25rem solid var(--blue-2); !* Adjust the color of the corner border *!*/
+/*    }*/
+
+    .card:last-child::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%; /* Adjust the width of the corner border */
+        border-top: .25rem solid var(--blue-2); /* Adjust the color of the corner border */
+    }
+
+}
+.btnWrapper{
+    height: 0;
+    display: flex;
+
+    .btn{
+        position: relative;
+        top: -15vh;
+    }
+}

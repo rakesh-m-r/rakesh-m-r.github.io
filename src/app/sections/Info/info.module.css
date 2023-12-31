@@ -11,7 +11,7 @@
     grid-template-columns: 25vw 75vw;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: white;
+    background-color: var(--blue-2);
     
 
     .column {
@@ -21,17 +21,13 @@
         align-items: center;
     }
     .column:nth-child(1) {
-        background-color: var(--backgroud);
+        background-color: var(--blue-8);
         border-bottom-right-radius: 4rem;
         overflow: hidden;
         color: #eff6ff87;
     }
- .column:nth-child(2) {
-        background-color: white;
-        
-    }
     .card {
-        background-color: #eff6ff;
+        background-color: var(--white-a10);
         border-radius: 4rem;
         position: relative;
         left: -13vw;
@@ -49,8 +45,9 @@
         .description{
             color: var(--secondary-font);
             font-family: 'Inter', sans-serif;
-            padding-top: 3rem;
+            padding-top: 2rem;
             font-size: 1.25rem;
+            font-weight: 500;
         }
         .imgWrapper{
             display: flex;
@@ -59,12 +56,35 @@
             .img{
                 position: relative;
                 top: -7rem;
-                right: 2rem;
-                scale: 1.25;
+                right: 3rem;
             }
         }
         .socialWrapper{
             margin-top: 2rem;
+            color: var(--primary-font);
+            .link{
+                padding-right: 2rem;
+                margin-top: 1.5rem;
+            }
         }
+    }
+}
+.btnWrapper{
+    height: 0;
+    display: flex;
+
+    .btn{
+        position: relative;
+        top: -16vh;
+        scale: 1.5;
+        animation: upDownAnimation 2s infinite alternate; /* Alternate between up and down motion */
+    }
+}
+@keyframes upDownAnimation {
+    0% {
+        transform: translateY(0);
+    }
+            100% {
+        transform: translateY(20px); /* Adjust the distance of the animation */
     }
 }
