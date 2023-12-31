@@ -14,7 +14,7 @@ const InfoSection:React.FC<{}> = ():ReactElement =>{
                 <Avatar className={styles.img} radius={"full"} size="9" src="/assets/profile.jpg" fallback={"RM"}/>
                 </div>
                 <h1 className={styles.heading}>Hey there, </h1>
-                <h1 className={styles.heading}>I'm <span className={styles.highlight}>Rakesh Mariyaplar</span> </h1>
+                <h1 className={styles.heading}>I&apos;m <span className={styles.highlight}>Rakesh Mariyaplar</span> </h1>
                 <p className={styles.description}>I am a software engineer based in Bangalore with 2+ years of experience in front-end technologies. Currently, I am working as a Software Development Engineer 2 (SDE-2) at Hashedin by Deloitte.</p>
                 <div className={styles.socialWrapper}>
                     <a target='_blank' href='https://github.com/rakesh-m-r'><Icon iconName={"ri-github-fill"}/></a>
