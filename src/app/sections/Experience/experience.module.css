@@ -77,5 +77,6 @@
     .btn{
         position: relative;
         top: -15vh;
+        background: var(--blue-8);
     }
 }

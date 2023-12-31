@@ -28,7 +28,7 @@ const Experience:React.FC<{}> = ():ReactElement =>{
             )
         })}
     </div>
-    <div className={styles.btnWrapper}><a target="_blank"  className={styles.btn} href={"https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"}><Button>Resume</Button></a></div>
+    <div className={styles.btnWrapper}><a target="_blank"   href={"https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"}><Button className={styles.btn}>Resume</Button></a></div>
     </>
 }
 
