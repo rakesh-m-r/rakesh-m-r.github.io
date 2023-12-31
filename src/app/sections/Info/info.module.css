@@ -34,8 +34,8 @@
         background-color: #eff6ff;
         border-radius: 4rem;
         position: relative;
-        left: -10vw;
-        min-width: 70vw;
+        left: -13vw;
+        min-width: calc(70vw - 2 * 4rem);
         padding: 4rem;
         .heading{
             font-weight: bold;
@@ -58,7 +58,7 @@
             height: 0;
             .img{
                 position: relative;
-                top: -6rem;
+                top: -7rem;
                 right: 2rem;
                 scale: 1.25;
             }
