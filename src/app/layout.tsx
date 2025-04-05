@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
+import { Analytics } from '@vercel/analytics/next';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,7 +51,9 @@ export default function RootLayout({
           content-1="dw-WKwT-bsIBzHUjQ3_Om-gdxCfpNdMJEZfKs8iriKE"
         />
         </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        <Analytics/>
+      </body>
     </html>
   );
 }
