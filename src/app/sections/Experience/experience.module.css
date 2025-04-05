@@ -38,7 +38,6 @@
         padding: 1.5rem;
         position: relative;
         border-radius: .5rem;
-        height: -webkit-fill-available;
         background: var(--white-a10);
 
         .headingWrapper {

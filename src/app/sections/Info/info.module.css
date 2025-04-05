@@ -6,16 +6,6 @@
     width: 100%;
 }
 
-@media screen and (min-width: 1000px) {
-    .maxWidth{
-        max-width: 700px;
-        display: contents;
-    }
-    .background, .headingWrapper, .description{
-        max-width: 700px !important;
-        min-width: 700px !important;
-    }
-}
 
 .background {
     display: flex;
@@ -23,7 +13,7 @@
     align-items: center;
     justify-content: center;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem);
 
     .column {
         height: 100vh;
@@ -89,15 +79,15 @@
         }
 
         .socialWrap svg {
-                display: block !important;
-            }
+            display: block !important;
+        }
     }
 }
 
 .btnWrapper {
     height: 0;
     display: flex;
-
+    justify-content: center;
     .btn {
         position: relative;
         top: -16vh;
@@ -117,13 +107,65 @@
         /* Adjust the distance of the animation */
     }
 }
-.btnWrapper{
-    height: 0;
-    display: flex;
 
-    .btn{
+.resumebtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    min-width: 70%;
+    padding: 2rem 0 0;
+    max-width: 70%;
+    margin: auto;
+
+    .resumeBtn button {
+        background: var(--white-a10);
+        color: var(--primary-font);
+        height: 2rem;
+    }
+
+    .resumeBtn i {
+        font-size: 1.25rem;
+    }
+
+    .resumeBtn:hover i {
+        animation: slideAnimation .5s infinite alternate;
+    }
+
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+        /* Adjust the distance of the animation */
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .maxWidth {
+        max-width: 700px;
+        display: contents;
+    }
+
+    .background,
+    .headingWrapper,
+    .description,
+    .resumebtnWrapper {
+        max-width: 700px !important;
+        min-width: 700px !important;
+    }
+}
+@media screen and (max-width: 470px) {
+    .imgWrapper{
         position: relative;
-        top: -8vh;
-        background: var(--blue-8);
+        left: -15%;
+    }
+    .btnWrapper{
+        display: none;
     }
 }

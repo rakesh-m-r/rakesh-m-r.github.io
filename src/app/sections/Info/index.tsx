@@ -2,10 +2,9 @@
 import styles from "./info.module.css";
 import { Avatar } from "@radix-ui/themes";
 import Icon from "../../../components/Icon";
-import lottie, {AnimationItem} from "lottie-web";
+import lottie, { AnimationItem } from "lottie-web";
 import React, { ReactElement, useEffect } from "react";
 import { Button } from "@radix-ui/themes";
-
 
 const InfoSection: React.FC<{}> = (): ReactElement => {
   useEffect(() => {
@@ -14,63 +13,65 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
       { selector: ".linkedin", path: "/assets/linkedin.json" },
       { selector: ".twitter", path: "/assets/twitter.json" },
     ];
-  
+
     const animations = elements
       .map(({ selector, path }) => {
         const element = document.querySelector(selector);
         if (!element) return null;
-  
+
         const animation = lottie.loadAnimation({
           container: element,
           renderer: "svg",
-          loop: false,
+          loop: true,
           autoplay: false,
           path,
         });
-  
+
         const handleMouseEnter = () => animation.play();
         const handleMouseLeave = () => animation.goToAndStop(0, true);
-  
+
         element.addEventListener("mouseenter", handleMouseEnter);
         element.addEventListener("mouseleave", handleMouseLeave);
-  
+
         return { element, animation, handleMouseEnter, handleMouseLeave };
       })
       .filter(
-        (item): item is {
+        (
+          item
+        ): item is {
           element: Element;
           animation: AnimationItem;
           handleMouseEnter: () => void;
           handleMouseLeave: () => void;
         } => item !== null
       );
-  
+
     return () => {
-      animations.forEach(({ element, animation, handleMouseEnter, handleMouseLeave }) => {
-        element.removeEventListener("mouseenter", handleMouseEnter);
-        element.removeEventListener("mouseleave", handleMouseLeave);
-        animation.destroy();
-      });
+      animations.forEach(
+        ({ element, animation, handleMouseEnter, handleMouseLeave }) => {
+          element.removeEventListener("mouseenter", handleMouseEnter);
+          element.removeEventListener("mouseleave", handleMouseLeave);
+          animation.destroy();
+        }
+      );
     };
   }, []);
-  
 
   return (
     <>
-    <div className={styles.btnWrapper}>
-        <a
-          target="_blank"
-          className={styles.btn}
-          href={
-            "https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"
-          }
-        >
-          <Button className={styles.btn}>Resume</Button>
-        </a>
-      </div>
-            <div className={styles.maxWidth}>
-
-      <div id="about" className={styles.background}>
+      <div className={styles.maxWidth}>
+        <div className={styles.resumebtnWrapper}>
+          <a
+            target="_blank"
+            className={styles.resumeBtn}
+            href={
+              "https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"
+            }
+          >
+            <Button className={styles.resumeBtn}>Resume <Icon iconName="ri-arrow-right-line"/></Button>
+          </a>
+        </div>
+        <div id="about" className={styles.background}>
           <div className={styles.headingWrapper}>
             <div>
               <h1 className={styles.heading}>Hey there, </h1>
@@ -115,11 +116,11 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
             </a>
           </div>
         </div>
-      </div>
-      <div className={styles.btnWrapper}>
-        <a className={styles.btn} href={"#experience"}>
-          <Icon iconName="ri-mouse-line" />
-        </a>
+        <div className={styles.btnWrapper}>
+          <a className={styles.btn} href={"#experience"}>
+            <Icon iconName="ri-mouse-line" />
+          </a>
+        </div>
       </div>
     </>
   );
