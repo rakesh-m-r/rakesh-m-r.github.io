@@ -1,0 +1,112 @@
+.workHeading {
+    background: var(--white-a10);
+    width: 100%;
+    color: var(--primary-font);
+    padding: 1rem 2rem 0;
+}
+
+.backgroud {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--white-a10);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 1rem 2rem 2rem;
+
+    .card:hover {
+        /* outline: 1px solid var(--primary-font); */
+        animation: glowUp .5s infinite alternate;
+        cursor:default;
+
+        .headingWrapper {
+            .arrowIcon {
+                transition: all .5s;
+                opacity: 1;
+                animation: upDownAnimation .5s infinite alternate;
+
+            }
+        }
+    }
+
+    .card {
+        padding: 1.5rem;
+        position: relative;
+        border-radius: .5rem;
+        height: -webkit-fill-available;
+        background: var(--white-a10);
+
+        .headingWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            color: var(--primary-font);
+            padding: 0 0 .5rem;
+
+            .arrowIcon {
+                opacity: 0;
+            }
+        }
+
+        .heading {
+            font-weight: bold;
+            color: var(--primary-font);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .heading1 {
+            font-weight: bold;
+            color: var(--secondary-font);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .description {
+            color: var(--secondary-font);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+}
+
+@keyframes upDownAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(10px, -10px);
+        /* Adjust the distance of the animation */
+    }
+}
+
+@keyframes glowUp {
+    0% {
+        outline: 0px solid var(--primary-font);
+        border-radius: .5rem;
+    }
+
+    25% {
+        outline: 1px solid var(--primary-font);
+        border-radius: .7rem;
+
+    }
+
+    50% {
+        outline: 2px solid var(--primary-font);
+        border-radius: .8rem;
+
+    }
+
+    100% {
+        outline: 2px solid var(--primary-font);
+        /* Adjust the distance of the animation */
+        border-radius: 1rem;
+
+    }
+}

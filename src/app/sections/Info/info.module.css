@@ -1,0 +1,129 @@
+.hFull {
+    height: 100%;
+}
+
+.wFull {
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .maxWidth{
+        max-width: 700px;
+        display: contents;
+    }
+    .background, .headingWrapper, .description{
+        max-width: 700px !important;
+        min-width: 700px !important;
+    }
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    .column {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .headingWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 70%;
+        min-width: 70%;
+    }
+
+    .column:nth-child(1) {
+        background-color: var(--white-a10);
+        border-bottom-right-radius: 4rem;
+        overflow: hidden;
+        color: var(--white-a10);
+    }
+
+    .heading {
+        font-weight: bold;
+        color: var(--white-a10);
+        font-size: 2.5rem;
+        font-family: 'Lexend', sans-serif;
+
+        .highlight {
+            color: var(--white-a10);
+        }
+    }
+
+    .description {
+        color: var(--white-a10);
+        font-family: 'Inter', sans-serif;
+        padding-top: 2.5rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        max-width: 70%;
+        min-width: 70%;
+    }
+
+    .socialWrapper {
+        margin-top: 2.5rem;
+        color: var(--white-a10);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .socialWrap {
+            background: var(--white-a10);
+            height: 3rem;
+            width: 3rem;
+            padding: .5rem;
+            border-radius: .5rem;
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .socialWrap svg {
+                display: block !important;
+            }
+    }
+}
+
+.btnWrapper {
+    height: 0;
+    display: flex;
+
+    .btn {
+        position: relative;
+        top: -16vh;
+        scale: 1.5;
+        animation: upDownAnimation 2s infinite alternate;
+        /* Alternate between up and down motion */
+    }
+}
+
+@keyframes upDownAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15px);
+        /* Adjust the distance of the animation */
+    }
+}
+.btnWrapper{
+    height: 0;
+    display: flex;
+
+    .btn{
+        position: relative;
+        top: -8vh;
+        background: var(--blue-8);
+    }
+}
