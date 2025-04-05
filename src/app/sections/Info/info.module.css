@@ -117,3 +117,13 @@
         /* Adjust the distance of the animation */
     }
 }
+.btnWrapper{
+    height: 0;
+    display: flex;
+
+    .btn{
+        position: relative;
+        top: -8vh;
+        background: var(--blue-8);
+    }
+}

@@ -4,6 +4,8 @@ import { Avatar } from "@radix-ui/themes";
 import Icon from "../../../components/Icon";
 import lottie from "lottie-web";
 import React, { ReactElement, useEffect } from "react";
+import { Button } from "@radix-ui/themes";
+
 
 const InfoSection: React.FC<{}> = (): ReactElement => {
   useEffect(() => {
@@ -49,6 +51,17 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
 
   return (
     <>
+    <div className={styles.btnWrapper}>
+        <a
+          target="_blank"
+          className={styles.btn}
+          href={
+            "https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"
+          }
+        >
+          <Button className={styles.btn}>Resume</Button>
+        </a>
+      </div>
             <div className={styles.maxWidth}>
 
       <div id="about" className={styles.background}>
