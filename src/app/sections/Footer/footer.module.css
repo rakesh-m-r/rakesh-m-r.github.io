@@ -1,0 +1,11 @@
+.background {
+    text-align: center;
+    min-width: 100vw;
+    background: var(--white-a10);
+    .footer{
+        background: var(--primary-font);;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        padding: 1rem 0;
+    }
+}
