@@ -2,7 +2,7 @@
 import styles from "./info.module.css";
 import { Avatar } from "@radix-ui/themes";
 import Icon from "../../../components/Icon";
-import lottie from "lottie-web";
+import lottie, {AnimationItem} from "lottie-web";
 import React, { ReactElement, useEffect } from "react";
 import { Button } from "@radix-ui/themes";
 
@@ -14,40 +14,46 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
       { selector: ".linkedin", path: "/assets/linkedin.json" },
       { selector: ".twitter", path: "/assets/twitter.json" },
     ];
-
+  
     const animations = elements
       .map(({ selector, path }) => {
         const element = document.querySelector(selector);
         if (!element) return null;
-
+  
         const animation = lottie.loadAnimation({
           container: element,
           renderer: "svg",
           loop: false,
           autoplay: false,
-          path: path,
+          path,
         });
-
-        const playAnimation = () => animation.play();
-        const stopAnimation = () => animation.goToAndStop(0, true);
-
-        element.addEventListener("mouseenter", playAnimation);
-        element.addEventListener("mouseleave", stopAnimation);
-
-        return { element, playAnimation, stopAnimation, animation };
+  
+        const handleMouseEnter = () => animation.play();
+        const handleMouseLeave = () => animation.goToAndStop(0, true);
+  
+        element.addEventListener("mouseenter", handleMouseEnter);
+        element.addEventListener("mouseleave", handleMouseLeave);
+  
+        return { element, animation, handleMouseEnter, handleMouseLeave };
       })
-      .filter(Boolean);
-
-    return () => {
-      animations.forEach(
-        ({ element, playAnimation, stopAnimation, animation }) => {
-          element.removeEventListener("mouseenter", playAnimation);
-          element.removeEventListener("mouseleave", stopAnimation);
-          animation.destroy();
-        }
+      .filter(
+        (item): item is {
+          element: Element;
+          animation: AnimationItem;
+          handleMouseEnter: () => void;
+          handleMouseLeave: () => void;
+        } => item !== null
       );
+  
+    return () => {
+      animations.forEach(({ element, animation, handleMouseEnter, handleMouseLeave }) => {
+        element.removeEventListener("mouseenter", handleMouseEnter);
+        element.removeEventListener("mouseleave", handleMouseLeave);
+        animation.destroy();
+      });
     };
   }, []);
+  
 
   return (
     <>
