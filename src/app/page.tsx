@@ -4,6 +4,7 @@ import { Theme } from "@radix-ui/themes";
 import InfoSection from "@/app/sections/Info";
 import Experience from "@/app/sections/Experience";
 import Footer from "./sections/Footer";
+import SayHi from "./sections/SayHi";
 
 export default function Home() {
   return (
