@@ -65,7 +65,7 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
             target="_blank"
             className={styles.resumeBtn}
             href={
-              "https://drive.google.com/file/d/1ebEBpv5dLI2_15EiYYaGIRxsl-i5fvlG/view?usp=sharing"
+              "https://drive.google.com/file/d/1tOoFFHG7MJRn_nYF50UXL4FLqdwl-ilm/view"
             }
           >
             <Button className={styles.resumeBtn}>Resume <Icon iconName="ri-arrow-right-line"/></Button>
@@ -74,10 +74,10 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
         <div id="about" className={styles.background}>
           <div className={styles.headingWrapper}>
             <div>
-              <h1 className={styles.heading}>Hey there, </h1>
+              <h1 className={styles.heading}>Hey There, </h1>
               <h1 className={styles.heading}>
                 I&apos;m{" "}
-                <span className={styles.highlight}>Rakesh Mariyaplar</span>{" "}
+                <span className={styles.highlight}>Rakesh M R</span>{" "}
               </h1>
             </div>
             <div className={styles.imgWrapper}>
@@ -92,7 +92,7 @@ const InfoSection: React.FC<{}> = (): ReactElement => {
           </div>
           <p className={styles.description}>
             I am a software engineer based in Bangalore with 4 years of
-            experience in Frontend and Backend technologies. Currently, I am
+            experience in Frontend technologies React, JavaScript, TypeScript. Currently, I am
             working as a Software Engineer II at SurveyMonkey.
           </p>
           <div className={styles.socialWrapper}>
